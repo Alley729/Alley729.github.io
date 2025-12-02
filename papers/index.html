@@ -126,709 +126,560 @@
 .paper-year-title {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: #333;
 }
-.paper-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 10px 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  background-color: white;
+.paper-item {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
 }
-.paper-table th {
-  background-color: #e9ecef;
-  padding: 12px;
-  text-align: left;
-  font-weight: bold;
-  border-bottom: 2px solid #dee2e6;
+.paper-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
-.paper-table td {
-  padding: 12px;
-  border-bottom: 1px solid #dee2e6;
-  vertical-align: top;
-}
-.paper-table tr:hover {
-  background-color: #f5f5f5;
+.paper-authors {
+  font-weight: 500;
+  margin-bottom: 5px;
 }
 .paper-title {
-  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 5px;
 }
-.paper-author {
+.paper-journal {
   color: #555;
+  margin-bottom: 5px;
 }
-.paper-doi a {
+.paper-highlight {
+  color: #007bff;
+  font-size: 0.9em;
+}
+.paper-journal a {
   color: #007bff;
   text-decoration: none;
 }
-.paper-doi a:hover {
+.paper-journal a:hover {
   text-decoration: underline;
 }
 </style>
 
 <div class="paper-year-section">
   <div class="paper-year-title">2025年</div>
-  <table class="paper-table">
-    <thead>
-      <tr>
-        <th>论文标题</th>
-        <th>作者</th>
-        <th>DOI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="paper-title">Deciphering the Code of Poly(L-lactic acid) Monofilament Achieving Orientation Limit</td>
-        <td class="paper-author">Zhao, G.; Wang, B.; Hou, Y.; Liu, J.; Zhang, C.; Hu, X.; Wu, G.; Jiang, W.; Yang, J.; Ni, Z.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1002/smll.202504025" target="_blank">10.1002/smll.202504025</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Fabrication and characteristic of conductive and ferromagnetic hollow composite microcapsules</td>
-        <td class="paper-author">Yang, H.; Jiang, W.; Lu, Y.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.matlet.2006.10.031" target="_blank">10.1016/j.matlet.2006.10.031</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Efficient continuous waste PLLA degradation via stearyl alcohol-mediated transesterification catalyzed by tin(II) octadecyl alkoxide</td>
-        <td class="paper-author">Zhang, Y.; Zhu, C.; Wang, H.; Qi, Y.; Sun, P.; Zhang, Q.; Jiang, W.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.cej.2025.167298" target="_blank">10.1016/j.cej.2025.167298</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Biomimetic nanodrug breaching tumor cell membrane barrier for high-efficiency drug delivery</td>
-        <td class="paper-author">Tong, Y.; Jiang, W.; Li, J.; Teng, P.; Wei, L.; Xu, H.; Jiang, X.; Hu, Y.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.cej.2025.163206" target="_blank">10.1016/j.cej.2025.163206</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Efficient monomer-loop recycling of PELT copolyesters: Interplay of theoretical and experimental approaches</td>
-        <td class="paper-author">Zhu, Chenxi; Zhang, Chen; Zhang, Junfeng; Li, Yueru; Yang, Linlin; Wang, Xiaoliang; Zeng, Guixiang; Jiang, Wei</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.polymdegradstab.2025.111683" target="_blank">10.1016/j.polymdegradstab.2025.111683</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Design, Synthesis and Pharmacological Evaluation of Novel 4-Phenoxyquinoline Derivatives as VEGFR2 Kinase Inhibitors for Tumor Treatment</td>
-        <td class="paper-author">Jiang, W.; Chen, J.; Wang, H.; Xue, A.; Zhang, X.; Guan, J.; Wei, L.; Cai, J.; Hu, Y.; Liu, D.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1007/s40242-024-4132-3" target="_blank">10.1007/s40242-024-4132-3</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Sustainable Closed-Loop Recycling of Polyester Waste Using Reconstructed Defective-Metal–Organic Frameworks</td>
-        <td class="paper-author">Cao, J.; Chen, W.; Jiang, W.; Li, X.; Sun, P.; Fu, S.; Zhang, Q.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1002/anie.202504743" target="_blank">10.1002/anie.202504743</a></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <div class="paper-item">
+    <div class="paper-authors">1. Zhao, G.; Wang, B.; Hou, Y.; Liu, J.; Zhang, C.; Hu, X.; Wu, G.; Jiang, W.; Yang, J.; Ni, Z.</div>
+    <div class="paper-title">"Deciphering the Code of Poly(L-lactic acid) Monofilament Achieving Orientation Limit"</div>
+    <div class="paper-journal">Small, 2025, <a href="https://doi.org/10.1002/smll.202504025" target="_blank">doi.org/10.1002/smll.202504025</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">2. Yang, H.; Jiang, W.; Lu, Y.</div>
+    <div class="paper-title">"Fabrication and characteristic of conductive and ferromagnetic hollow composite microcapsules"</div>
+    <div class="paper-journal">Materials Letters, 2025, <a href="https://doi.org/10.1016/j.matlet.2006.10.031" target="_blank">doi.org/10.1016/j.matlet.2006.10.031</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">3. Zhang, Y.; Zhu, C.; Wang, H.; Qi, Y.; Sun, P.; Zhang, Q.; Jiang, W.</div>
+    <div class="paper-title">"Efficient continuous waste PLLA degradation via stearyl alcohol-mediated transesterification catalyzed by tin(II) octadecyl alkoxide"</div>
+    <div class="paper-journal">Chemical Engineering Journal, 2025, <a href="https://doi.org/10.1016/j.cej.2025.167298" target="_blank">doi.org/10.1016/j.cej.2025.167298</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">4. Tong, Y.; Jiang, W.; Li, J.; Teng, P.; Wei, L.; Xu, H.; Jiang, X.; Hu, Y.</div>
+    <div class="paper-title">"Biomimetic nanodrug breaching tumor cell membrane barrier for high-efficiency drug delivery"</div>
+    <div class="paper-journal">Chemical Engineering Journal, 2025, <a href="https://doi.org/10.1016/j.cej.2025.163206" target="_blank">doi.org/10.1016/j.cej.2025.163206</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">5. Zhu, Chenxi; Zhang, Chen; Zhang, Junfeng; Li, Yueru; Yang, Linlin; Wang, Xiaoliang; Zeng, Guixiang; Jiang, Wei</div>
+    <div class="paper-title">"Efficient monomer-loop recycling of PELT copolyesters: Interplay of theoretical and experimental approaches"</div>
+    <div class="paper-journal">Polymer Degradation and Stability, 2025, <a href="https://doi.org/10.1016/j.polymdegradstab.2025.111683" target="_blank">doi.org/10.1016/j.polymdegradstab.2025.111683</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">6. Jiang, W.; Chen, J.; Wang, H.; Xue, A.; Zhang, X.; Guan, J.; Wei, L.; Cai, J.; Hu, Y.; Liu, D.</div>
+    <div class="paper-title">"Design, Synthesis and Pharmacological Evaluation of Novel 4-Phenoxyquinoline Derivatives as VEGFR2 Kinase Inhibitors for Tumor Treatment"</div>
+    <div class="paper-journal">Journal of Molecular Structure, 2025, <a href="https://doi.org/10.1007/s40242-024-4132-3" target="_blank">doi.org/10.1007/s40242-024-4132-3</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">7. Cao, J.; Chen, W.; Jiang, W.; Li, X.; Sun, P.; Fu, S.; Zhang, Q.</div>
+    <div class="paper-title">"Sustainable Closed-Loop Recycling of Polyester Waste Using Reconstructed Defective-Metal–Organic Frameworks"</div>
+    <div class="paper-journal">Angewandte Chemie International Edition, 2025, <a href="https://doi.org/10.1002/anie.202504743" target="_blank">doi.org/10.1002/anie.202504743</a></div>
+  </div>
 </div>
 
 <div class="paper-year-section">
   <div class="paper-year-title">2024年</div>
-  <table class="paper-table">
-    <thead>
-      <tr>
-        <th>论文标题</th>
-        <th>作者</th>
-        <th>DOI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="paper-title">High efficient synthesis of benzyl lactate through waste PLA alcoholysis by protic ionic salt</td>
-        <td class="paper-author">Zhu, C.; Yang, L.; Li, Y.; Qi, Y.; Zeng, G.; Jiang, W.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.cej.2024.157644" target="_blank">10.1016/j.cej.2024.157644</a></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <div class="paper-item">
+    <div class="paper-authors">1. Zhu, C.; Yang, L.; Li, Y.; Qi, Y.; Zeng, G.; Jiang, W.</div>
+    <div class="paper-title">"High efficient synthesis of benzyl lactate through waste PLA alcoholysis by protic ionic salt"</div>
+    <div class="paper-journal">Chemical Engineering Journal, 2024, <a href="https://doi.org/10.1016/j.cej.2024.157644" target="_blank">doi.org/10.1016/j.cej.2024.157644</a></div>
+  </div>
 </div>
 
 <div class="paper-year-section">
   <div class="paper-year-title">2023年</div>
-  <table class="paper-table">
-    <thead>
-      <tr>
-        <th>论文标题</th>
-        <th>作者</th>
-        <th>DOI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="paper-title">The Role of Integrins for Mediating Nanodrugs to Improve Performance in Tumor Diagnosis and Treatment</td>
-        <td class="paper-author">Yu, C.; Jiang, W.; Li, B.; Hu, Y.; Liu, D.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.3390/nano13111721" target="_blank">10.3390/nano13111721</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Inhibition of Hypoxia-Inducible Transcription Factor (HIF-1α) Signaling with Sulfonyl-γ-AApeptide Helices</td>
-        <td class="paper-author">Jiang, W.; Abdulkadir, S.; Zhao, X.; Sang, P.; Tomatsidou, A.; Zhang, X.; Chen, Y.; Calcul, L.; Sun, X.; Cheng, F.; Hu, Y.; Cai, J.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1021/jacs.3c06694" target="_blank">10.1021/jacs.3c06694</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Strategies to prolong drug retention in solid tumors by aggregating Endo-CMC nanoparticles</td>
-        <td class="paper-author">Xia, D.; Zhang, X.; Hao, H.; Jiang, W.; Chen, C.; Li, H.; Feng, L.; Li, J.; Wu, Y.; Zhang, L.; Hu, Y.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.jconrel.2023.07.006" target="_blank">10.1016/j.jconrel.2023.07.006</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Ultracompact Multimode Meta-Microscope Based on Both Spatial and Guided-Wave Illumination</td>
-        <td class="paper-author">Ye, X.; Sun, J.; Jiang, W.; Yu, R.; Chen, C.; Xiao, X.; Qian, X.; Huang, C.; Hu, Y.; Zhu, S.; Li, T.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.34133/adi.0023" target="_blank">10.34133/adi.0023</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Molecular oxygen-assisted in defect-rich ZnO for catalytic depolymerization of polyethylene terephthalate</td>
-        <td class="paper-author">Cao, J.; Lin, Y.; Zhou, T.; Wang, W.; Zhang, Q.; Pan, B.; Jiang, W.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.isci.2023.107492" target="_blank">10.1016/j.isci.2023.107492</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Oligomers from the Synthetic Polymers: Another Potential Iceberg of New Pollutants</td>
-        <td class="paper-author">Shi, C.; Wang, M.; Wang, Z.; Qu, G.; Jiang, W.; Pan, X.; Fang, M.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1021/envhealth.3c00086" target="_blank">10.1021/envhealth.3c00086</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Enhanced denitrification using high-molecular-weight poly(lactic acid) blended with lactide as an effective carbon source</td>
-        <td class="paper-author">Si, C.; Wang, S.; Chen, Z.; Hu, G.; Zhao, X.; Sun, P.; Zhang, Q.; Jiang, W.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.biortech.2023.129542" target="_blank">10.1016/j.biortech.2023.129542</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Antifouling amidoximated polyacrylonitrile-regenerated cellulose acetate composite nanofibrous membranes for oil/water separation: Membrane fabrication, performance and fouling mechanism</td>
-        <td class="paper-author">Feng, K.; Ma, W.; Zhou, F.; Si, C.; Zheng, P.; Sun, P.; Zhang, Q.; Zhan, M.; Jiang, W.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.desal.2024.117411" target="_blank">10.1016/j.desal.2024.117411</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Life-Cycle Greenhouse Gas Emissions and Primary Energy Demand of Agricultural Greenhouse Plastics: Proposed Optimization toward Agricultural Plastic Sustainability</td>
-        <td class="paper-author">Zhang, J.; Kang, Z.; Jiang, W.; Zhang, Q.; Sun, P.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1021/acssuschemeng.4c01286" target="_blank">10.1021/acssuschemeng.4c01286</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Synergistic catalysis of waste PET glycolysis by urea/choline chloride and its mechanism</td>
-        <td class="paper-author">Chenxi, Z.; Zhuangzhuang, H.; Linlin, Y.; Guixiang, Z.; Bingcai, P.; Wei, J.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1360/SSC-2023-0082" target="_blank">10.1360/SSC-2023-0082</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Metal-free recycling of waste polyethylene terephthalate mediated by TBD protic ionic salts: the crucial role of anionic ligands</td>
-        <td class="paper-author">Zhu, C.; Yang, L.; Chen, C.; Zeng, G.; Jiang, W.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1039/d3cp03590e" target="_blank">10.1039/d3cp03590e</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Oxygen Vacancy Promoted Generation of Monatomic Oxygen Anion over Ni2+-Doped MgO for Efficient Glycolysis of Waste PET**</td>
-        <td class="paper-author">Lin, Y.; Yang, D.; Meng, C.; Si, C.; Zhang, Q.; Zeng, G.; Jiang, W.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1002/cssc.202300154" target="_blank">10.1002/cssc.202300154</a></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <div class="paper-item">
+    <div class="paper-authors">1. Yu, C.; Jiang, W.; Li, B.; Hu, Y.; Liu, D.</div>
+    <div class="paper-title">"The Role of Integrins for Mediating Nanodrugs to Improve Performance in Tumor Diagnosis and Treatment"</div>
+    <div class="paper-journal">Nanomaterials, 2023, <a href="https://doi.org/10.3390/nano13111721" target="_blank">doi.org/10.3390/nano13111721</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">2. Jiang, W.; Abdulkadir, S.; Zhao, X.; Sang, P.; Tomatsidou, A.; Zhang, X.; Chen, Y.; Calcul, L.; Sun, X.; Cheng, F.; Hu, Y.; Cai, J.</div>
+    <div class="paper-title">"Inhibition of Hypoxia-Inducible Transcription Factor (HIF-1α) Signaling with Sulfonyl-γ-AApeptide Helices"</div>
+    <div class="paper-journal">Journal of the American Chemical Society, 2023, <a href="https://doi.org/10.1021/jacs.3c06694" target="_blank">doi.org/10.1021/jacs.3c06694</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">3. Xia, D.; Zhang, X.; Hao, H.; Jiang, W.; Chen, C.; Li, H.; Feng, L.; Li, J.; Wu, Y.; Zhang, L.; Hu, Y.</div>
+    <div class="paper-title">"Strategies to prolong drug retention in solid tumors by aggregating Endo-CMC nanoparticles"</div>
+    <div class="paper-journal">Journal of Controlled Release, 2023, <a href="https://doi.org/10.1016/j.jconrel.2023.07.006" target="_blank">doi.org/10.1016/j.jconrel.2023.07.006</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">4. Ye, X.; Sun, J.; Jiang, W.; Yu, R.; Chen, C.; Xiao, X.; Qian, X.; Huang, C.; Hu, Y.; Zhu, S.; Li, T.</div>
+    <div class="paper-title">"Ultracompact Multimode Meta-Microscope Based on Both Spatial and Guided-Wave Illumination"</div>
+    <div class="paper-journal">Advanced Photonics Research, 2023, <a href="https://doi.org/10.34133/adi.0023" target="_blank">doi.org/10.34133/adi.0023</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">5. Cao, J.; Lin, Y.; Zhou, T.; Wang, W.; Zhang, Q.; Pan, B.; Jiang, W.</div>
+    <div class="paper-title">"Molecular oxygen-assisted in defect-rich ZnO for catalytic depolymerization of polyethylene terephthalate"</div>
+    <div class="paper-journal">iScience, 2023, <a href="https://doi.org/10.1016/j.isci.2023.107492" target="_blank">doi.org/10.1016/j.isci.2023.107492</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">6. Shi, C.; Wang, M.; Wang, Z.; Qu, G.; Jiang, W.; Pan, X.; Fang, M.</div>
+    <div class="paper-title">"Oligomers from the Synthetic Polymers: Another Potential Iceberg of New Pollutants"</div>
+    <div class="paper-journal">Environmental Science & Technology Letters, 2023, <a href="https://doi.org/10.1021/envhealth.3c00086" target="_blank">doi.org/10.1021/envhealth.3c00086</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">7. Si, C.; Wang, S.; Chen, Z.; Hu, G.; Zhao, X.; Sun, P.; Zhang, Q.; Jiang, W.</div>
+    <div class="paper-title">"Enhanced denitrification using high-molecular-weight poly(lactic acid) blended with lactide as an effective carbon source"</div>
+    <div class="paper-journal">Bioresource Technology, 2023, <a href="https://doi.org/10.1016/j.biortech.2023.129542" target="_blank">doi.org/10.1016/j.biortech.2023.129542</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">8. Feng, K.; Ma, W.; Zhou, F.; Si, C.; Zheng, P.; Sun, P.; Zhang, Q.; Zhan, M.; Jiang, W.</div>
+    <div class="paper-title">"Antifouling amidoximated polyacrylonitrile-regenerated cellulose acetate composite nanofibrous membranes for oil/water separation: Membrane fabrication, performance and fouling mechanism"</div>
+    <div class="paper-journal">Desalination, 2023, <a href="https://doi.org/10.1016/j.desal.2024.117411" target="_blank">doi.org/10.1016/j.desal.2024.117411</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">9. Zhang, J.; Kang, Z.; Jiang, W.; Zhang, Q.; Sun, P.</div>
+    <div class="paper-title">"Life-Cycle Greenhouse Gas Emissions and Primary Energy Demand of Agricultural Greenhouse Plastics: Proposed Optimization toward Agricultural Plastic Sustainability"</div>
+    <div class="paper-journal">ACS Sustainable Chemistry & Engineering, 2023, <a href="https://doi.org/10.1021/acssuschemeng.4c01286" target="_blank">doi.org/10.1021/acssuschemeng.4c01286</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">10. Chenxi, Z.; Zhuangzhuang, H.; Linlin, Y.; Guixiang, Z.; Bingcai, P.; Wei, J.</div>
+    <div class="paper-title">"Synergistic catalysis of waste PET glycolysis by urea/choline chloride and its mechanism"</div>
+    <div class="paper-journal">Science China Chemistry, 2023, <a href="https://doi.org/10.1360/SSC-2023-0082" target="_blank">doi.org/10.1360/SSC-2023-0082</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">11. Zhu, C.; Yang, L.; Chen, C.; Zeng, G.; Jiang, W.</div>
+    <div class="paper-title">"Metal-free recycling of waste polyethylene terephthalate mediated by TBD protic ionic salts: the crucial role of anionic ligands"</div>
+    <div class="paper-journal">Physical Chemistry Chemical Physics, 2023, <a href="https://doi.org/10.1039/d3cp03590e" target="_blank">doi.org/10.1039/d3cp03590e</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">12. Lin, Y.; Yang, D.; Meng, C.; Si, C.; Zhang, Q.; Zeng, G.; Jiang, W.</div>
+    <div class="paper-title">"Oxygen Vacancy Promoted Generation of Monatomic Oxygen Anion over Ni2+-Doped MgO for Efficient Glycolysis of Waste PET**"</div>
+    <div class="paper-journal">ChemSusChem, 2023, <a href="https://doi.org/10.1002/cssc.202300154" target="_blank">doi.org/10.1002/cssc.202300154</a></div>
+  </div>
 </div>
 
 <div class="paper-year-section">
   <div class="paper-year-title">2022年</div>
-  <table class="paper-table">
-    <thead>
-      <tr>
-        <th>论文标题</th>
-        <th>作者</th>
-        <th>DOI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="paper-title">Modulating Angiogenesis by Proteomimetics of Vascular Endothelial Growth Factor</td>
-        <td class="paper-author">Abdulkadir, S.; Li, C.; Jiang, W.; Zhao, X.; Sang, P.; Wei, L.; Hu, Y.; Li, Q.; Cai, J.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1021/jacs.1c09571" target="_blank">10.1021/jacs.1c09571</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Platinum prodrug nanoparticles inhibiting tumor recurrence and metastasis by concurrent chemoradiotherapy</td>
-        <td class="paper-author">Jiang, W.; Wei, L.; Chen, B.; Luo, X.; Xu, P.; Cai, J.; Hu, Y.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1186/s12951-022-01322-y" target="_blank">10.1186/s12951-022-01322-y</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Correction to: Platinum prodrug nanoparticles inhibiting tumor recurrence and metastasis by concurrent chemoradiotherapy (Journal of Nanobiotechnology, (2022), 20, 1, (129), 10.1186/s12951-022-01322-y)</td>
-        <td class="paper-author">Jiang, W.; Wei, L.; Chen, B.; Luo, X.; Xu, P.; Cai, J.; Hu, Y.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1186/s12951-022-01418-5" target="_blank">10.1186/s12951-022-01418-5</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Molecular mechanism of waste polyethylene terephthalate recycling by the 1,5,7-triazabicyclo[4.4.0]decium acetate/ zinc acetate deep eutectic solvent: The crucial role of 1,5,7-triazabicyclo[4.4.0]decium cation</td>
-        <td class="paper-author">Zhu, C.; Fan, C.; Hao, Z.; Jiang, W.; Zhang, L.; Zeng, G.; Sun, P.; Zhang, Q.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.apcata.2022.118681" target="_blank">10.1016/j.apcata.2022.118681</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Direct Synthesis of Lactide from Lactic Acid by Sn-beta Zeolite: Crucial Role of the Open Sn Site</td>
-        <td class="paper-author">Xu, Y.; Yang, L.; Si, C.; Zhang, S.; Zhang, Q.; Zeng, G.; Jiang, W.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1021/acs.iecr.2c03390" target="_blank">10.1021/acs.iecr.2c03390</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Mechanism of the Significant Acceleration of Polyethylene Terephthalate Glycolysis by Defective Ultrathin ZnO Nanosheets with Heteroatom Doping</td>
-        <td class="paper-author">Cao, J.; Lin, Y.; Jiang, W.; Wang, W.; Li, X.; Zhou, T.; Sun, P.; Pan, B.; Li, A.; Zhang, Q.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1021/acssuschemeng.1c08656" target="_blank">10.1021/acssuschemeng.1c08656</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Hydrophobic Biodegradable Hyperbranched Copolymers with Excellent Marine Diatom Resistance</td>
-        <td class="paper-author">Si, C.; Hu, G.; Jiang, W.; Sun, P.; Cao, J.; Ji, R.; Li, A.-M.; Zhang, Q.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1021/acs.biomac.2c00779" target="_blank">10.1021/acs.biomac.2c00779</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Regulating Acidosis and Relieving Hypoxia by Platelet Membrane-Coated Nanoparticle for Enhancing Tumor Chemotherapy</td>
-        <td class="paper-author">Luo, X.; Cao, J.; Yu, J.; Dai, D.; Jiang, W.; Feng, Y.; Hu, Y.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.3389/fbioe.2022.885105" target="_blank">10.3389/fbioe.2022.885105</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Efficient glycolysis of PET catalyzed by a metal-free phosphazene base: The important role of EG-</td>
-        <td class="paper-author">Fan, C.; Zhang, L.; Zhu, C.; Cao, J.; Xu, Y.; Sun, P.; Zeng, G.; Jiang, W.; Zhang, Q.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1039/d1gc03885k" target="_blank">10.1039/d1gc03885k</a></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <div class="paper-item">
+    <div class="paper-authors">1. Abdulkadir, S.; Li, C.; Jiang, W.; Zhao, X.; Sang, P.; Wei, L.; Hu, Y.; Li, Q.; Cai, J.</div>
+    <div class="paper-title">"Modulating Angiogenesis by Proteomimetics of Vascular Endothelial Growth Factor"</div>
+    <div class="paper-journal">Journal of the American Chemical Society, 2022, <a href="https://doi.org/10.1021/jacs.1c09571" target="_blank">doi.org/10.1021/jacs.1c09571</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">2. Jiang, W.; Wei, L.; Chen, B.; Luo, X.; Xu, P.; Cai, J.; Hu, Y.</div>
+    <div class="paper-title">"Platinum prodrug nanoparticles inhibiting tumor recurrence and metastasis by concurrent chemoradiotherapy"</div>
+    <div class="paper-journal">Journal of Nanobiotechnology, 2022, <a href="https://doi.org/10.1186/s12951-022-01322-y" target="_blank">doi.org/10.1186/s12951-022-01322-y</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">3. Jiang, W.; Wei, L.; Chen, B.; Luo, X.; Xu, P.; Cai, J.; Hu, Y.</div>
+    <div class="paper-title">"Correction to: Platinum prodrug nanoparticles inhibiting tumor recurrence and metastasis by concurrent chemoradiotherapy (Journal of Nanobiotechnology, (2022), 20, 1, (129), 10.1186/s12951-022-01322-y)"</div>
+    <div class="paper-journal">Journal of Nanobiotechnology, 2022, <a href="https://doi.org/10.1186/s12951-022-01418-5" target="_blank">doi.org/10.1186/s12951-022-01418-5</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">4. Zhu, C.; Fan, C.; Hao, Z.; Jiang, W.; Zhang, L.; Zeng, G.; Sun, P.; Zhang, Q.</div>
+    <div class="paper-title">"Molecular mechanism of waste polyethylene terephthalate recycling by the 1,5,7-triazabicyclo[4.4.0]decium acetate/ zinc acetate deep eutectic solvent: The crucial role of 1,5,7-triazabicyclo[4.4.0]decium cation"</div>
+    <div class="paper-journal">Applied Catalysis A: General, 2022, <a href="https://doi.org/10.1016/j.apcata.2022.118681" target="_blank">doi.org/10.1016/j.apcata.2022.118681</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">5. Xu, Y.; Yang, L.; Si, C.; Zhang, S.; Zhang, Q.; Zeng, G.; Jiang, W.</div>
+    <div class="paper-title">"Direct Synthesis of Lactide from Lactic Acid by Sn-beta Zeolite: Crucial Role of the Open Sn Site"</div>
+    <div class="paper-journal">Industrial & Engineering Chemistry Research, 2022, <a href="https://doi.org/10.1021/acs.iecr.2c03390" target="_blank">doi.org/10.1021/acs.iecr.2c03390</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">6. Cao, J.; Lin, Y.; Jiang, W.; Wang, W.; Li, X.; Zhou, T.; Sun, P.; Pan, B.; Li, A.; Zhang, Q.</div>
+    <div class="paper-title">"Mechanism of the Significant Acceleration of Polyethylene Terephthalate Glycolysis by Defective Ultrathin ZnO Nanosheets with Heteroatom Doping"</div>
+    <div class="paper-journal">ACS Sustainable Chemistry & Engineering, 2022, <a href="https://doi.org/10.1021/acssuschemeng.1c08656" target="_blank">doi.org/10.1021/acssuschemeng.1c08656</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">7. Si, C.; Hu, G.; Jiang, W.; Sun, P.; Cao, J.; Ji, R.; Li, A.-M.; Zhang, Q.</div>
+    <div class="paper-title">"Hydrophobic Biodegradable Hyperbranched Copolymers with Excellent Marine Diatom Resistance"</div>
+    <div class="paper-journal">ACS Biomaterials Science & Engineering, 2022, <a href="https://doi.org/10.1021/acs.biomac.2c00779" target="_blank">doi.org/10.1021/acs.biomac.2c00779</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">8. Luo, X.; Cao, J.; Yu, J.; Dai, D.; Jiang, W.; Feng, Y.; Hu, Y.</div>
+    <div class="paper-title">"Regulating Acidosis and Relieving Hypoxia by Platelet Membrane-Coated Nanoparticle for Enhancing Tumor Chemotherapy"</div>
+    <div class="paper-journal">Frontiers in Bioengineering and Biotechnology, 2022, <a href="https://doi.org/10.3389/fbioe.2022.885105" target="_blank">doi.org/10.3389/fbioe.2022.885105</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">9. Fan, C.; Zhang, L.; Zhu, C.; Cao, J.; Xu, Y.; Sun, P.; Zeng, G.; Jiang, W.; Zhang, Q.</div>
+    <div class="paper-title">"Efficient glycolysis of PET catalyzed by a metal-free phosphazene base: The important role of EG-"</div>
+    <div class="paper-journal">Green Chemistry, 2022, <a href="https://doi.org/10.1039/d1gc03885k" target="_blank">doi.org/10.1039/d1gc03885k</a></div>
+  </div>
 </div>
 
 <div class="paper-year-section">
   <div class="paper-year-title">2021年</div>
-  <table class="paper-table">
-    <thead>
-      <tr>
-        <th>论文标题</th>
-        <th>作者</th>
-        <th>DOI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="paper-title">The Sustainability of Energy Conversion Inhibition for Tumor Ferroptosis Therapy and Chemotherapy</td>
-        <td class="paper-author">Jiang, W.; Luo, X.; Wei, L.; Yuan, S.; Cai, J.; Jiang, X.; Hu, Y.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1002/smll.202102695" target="_blank">10.1002/smll.202102695</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Poly(l-lactic acid) monofilaments for biodegradable braided self-expanding stent</td>
-        <td class="paper-author">Zhao, G.; Li, X.; Tian, Y.; Wu, G.; Zhang, Y.; Jiang, W.; Yang, J.; Ni, Z.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1007/s10853-021-06021-x" target="_blank">10.1007/s10853-021-06021-x</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Oriented Assembly of Anisotropic Nanosheets into Ultrathin Flowerlike Superstructures for Energy Storage</td>
-        <td class="paper-author">Cao, J.; Zhou, T.; Xu, Y.; Qi, Y.; Jiang, W.; Wang, W.; Sun, P.; Li, A.; Zhang, Q.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1021/acsnano.0c08088" target="_blank">10.1021/acsnano.0c08088</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Glycolysis mechanism of efficient catalyzing waste polyethylene terephthalate by zinc acetylacetonate</td>
-        <td class="paper-author">Cao, J.; Fan, C.; Zhang, L.; Jiang, W.; Zeng, G.; Sun, P.; Zhou, T.; Lin, Y.; Li, A.; Zhang, Q.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1360/SSC-2021-0100" target="_blank">10.1360/SSC-2021-0100</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">The effect of intrinsic characteristics on mechanical properties of poly(l-lactic acid) bioresorbable vascular stents</td>
-        <td class="paper-author">Hua, R.; Tian, Y.; Cheng, J.; Wu, G.; Jiang, W.; Ni, Z.; Zhao, G.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.medengphy.2020.04.006" target="_blank">10.1016/j.medengphy.2020.04.006</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">PLA-based core-shell structure stereocomplexed nanoparticles with enhanced loading and release profile of paclitaxel</td>
-        <td class="paper-author">Wang, Y.; Cui, S.; Wu, B.; Zhang, Q.; Jiang, W.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.52586/4964" target="_blank">10.52586/4964</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">The folding propensity of α/sulfono-γ-AA peptidic foldamers with both left- and right-handedness</td>
-        <td class="paper-author">Teng, P.; Zheng, M.; Cerrato, D.C.; Shi, Y.; Zhou, M.; Xue, S.; Jiang, W.; Wojtas, L.; Ming, L.-J.; Hu, Y.; Cai, J.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1038/s42004-021-00496-0" target="_blank">10.1038/s42004-021-00496-0</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Strategies of Alleviating Tumor Hypoxia and Enhancing Tumor Therapeutic Effect by Macromolecular Nanomaterials</td>
-        <td class="paper-author">Jin, Z.; Zhao, Q.; Yuan, S.; Jiang, W.; Hu, Y.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1002/mabi.202100092" target="_blank">10.1002/mabi.202100092</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Controlled Synthesis of l -Lactide Using Sn-Beta Zeolite Catalysts in a One-Step Route</td>
-        <td class="paper-author">Xu, Y.; Fang, Y.; Cao, J.; Sun, P.; Min, C.; Qi, Y.; Jiang, W.; Zhang, Q.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1021/acs.iecr.1c02448" target="_blank">10.1021/acs.iecr.1c02448</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Direct synthesis of lactide from concentrated lactic acid catalyzed by hierarchical Sn-beta zeolite</td>
-        <td class="paper-author">Xu, Y.; Li, Y.; Ji, R.; Fang, Y.; Sun, P.; Zhang, Q.; Jiang, W.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1360/SSC-2022-0048" target="_blank">10.1360/SSC-2022-0048</a></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <div class="paper-item">
+    <div class="paper-authors">1. Jiang, W.; Luo, X.; Wei, L.; Yuan, S.; Cai, J.; Jiang, X.; Hu, Y.</div>
+    <div class="paper-title">"The Sustainability of Energy Conversion Inhibition for Tumor Ferroptosis Therapy and Chemotherapy"</div>
+    <div class="paper-journal">Small, 2021, <a href="https://doi.org/10.1002/smll.202102695" target="_blank">doi.org/10.1002/smll.202102695</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">2. Zhao, G.; Li, X.; Tian, Y.; Wu, G.; Zhang, Y.; Jiang, W.; Yang, J.; Ni, Z.</div>
+    <div class="paper-title">"Poly(l-lactic acid) monofilaments for biodegradable braided self-expanding stent"</div>
+    <div class="paper-journal">Journal of Materials Science: Materials in Medicine, 2021, <a href="https://doi.org/10.1007/s10853-021-06021-x" target="_blank">doi.org/10.1007/s10853-021-06021-x</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">3. Cao, J.; Zhou, T.; Xu, Y.; Qi, Y.; Jiang, W.; Wang, W.; Sun, P.; Li, A.; Zhang, Q.</div>
+    <div class="paper-title">"Oriented Assembly of Anisotropic Nanosheets into Ultrathin Flowerlike Superstructures for Energy Storage"</div>
+    <div class="paper-journal">ACS Nano, 2021, <a href="https://doi.org/10.1021/acsnano.0c08088" target="_blank">doi.org/10.1021/acsnano.0c08088</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">4. Cao, J.; Fan, C.; Zhang, L.; Jiang, W.; Zeng, G.; Sun, P.; Zhou, T.; Lin, Y.; Li, A.; Zhang, Q.</div>
+    <div class="paper-title">"Glycolysis mechanism of efficient catalyzing waste polyethylene terephthalate by zinc acetylacetonate"</div>
+    <div class="paper-journal">Science China Chemistry, 2021, <a href="https://doi.org/10.1360/SSC-2021-0100" target="_blank">doi.org/10.1360/SSC-2021-0100</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">5. Hua, R.; Tian, Y.; Cheng, J.; Wu, G.; Jiang, W.; Ni, Z.; Zhao, G.</div>
+    <div class="paper-title">"The effect of intrinsic characteristics on mechanical properties of poly(l-lactic acid) bioresorbable vascular stents"</div>
+    <div class="paper-journal">Medical Engineering & Physics, 2021, <a href="https://doi.org/10.1016/j.medengphy.2020.04.006" target="_blank">doi.org/10.1016/j.medengphy.2020.04.006</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">6. Wang, Y.; Cui, S.; Wu, B.; Zhang, Q.; Jiang, W.</div>
+    <div class="paper-title">"PLA-based core-shell structure stereocomplexed nanoparticles with enhanced loading and release profile of paclitaxel"</div>
+    <div class="paper-journal">Journal of Biomedical Materials Research Part B: Applied Biomaterials, 2021, <a href="https://doi.org/10.52586/4964" target="_blank">doi.org/10.52586/4964</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">7. Teng, P.; Zheng, M.; Cerrato, D.C.; Shi, Y.; Zhou, M.; Xue, S.; Jiang, W.; Wojtas, L.; Ming, L.-J.; Hu, Y.; Cai, J.</div>
+    <div class="paper-title">"The folding propensity of α/sulfono-γ-AA peptidic foldamers with both left- and right-handedness"</div>
+    <div class="paper-journal">Communication Chemistry, 2021, <a href="https://doi.org/10.1038/s42004-021-00496-0" target="_blank">doi.org/10.1038/s42004-021-00496-0</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">8. Jin, Z.; Zhao, Q.; Yuan, S.; Jiang, W.; Hu, Y.</div>
+    <div class="paper-title">"Strategies of Alleviating Tumor Hypoxia and Enhancing Tumor Therapeutic Effect by Macromolecular Nanomaterials"</div>
+    <div class="paper-journal">Macromolecular Bioscience, 2021, <a href="https://doi.org/10.1002/mabi.202100092" target="_blank">doi.org/10.1002/mabi.202100092</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">9. Xu, Y.; Fang, Y.; Cao, J.; Sun, P.; Min, C.; Qi, Y.; Jiang, W.; Zhang, Q.</div>
+    <div class="paper-title">"Controlled Synthesis of l -Lactide Using Sn-Beta Zeolite Catalysts in a One-Step Route"</div>
+    <div class="paper-journal">Industrial & Engineering Chemistry Research, 2021, <a href="https://doi.org/10.1021/acs.iecr.1c02448" target="_blank">doi.org/10.1021/acs.iecr.1c02448</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">10. Xu, Y.; Li, Y.; Ji, R.; Fang, Y.; Sun, P.; Zhang, Q.; Jiang, W.</div>
+    <div class="paper-title">"Direct synthesis of lactide from concentrated lactic acid catalyzed by hierarchical Sn-beta zeolite"</div>
+    <div class="paper-journal">Science China Chemistry, 2021, <a href="https://doi.org/10.1360/SSC-2022-0048" target="_blank">doi.org/10.1360/SSC-2022-0048</a></div>
+  </div>
 </div>
 
 <div class="paper-year-section">
   <div class="paper-year-title">2020年</div>
-  <table class="paper-table">
-    <thead>
-      <tr>
-        <th>论文标题</th>
-        <th>作者</th>
-        <th>DOI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="paper-title">Au-Hemoglobin loaded platelet alleviating tumor hypoxia and enhancing the radiotherapy effect with low-dose x-ray</td>
-        <td class="paper-author">Xia, D.; Hang, D.; Li, Y.; Jiang, W.; Zhu, J.; Ding, Y.; Gu, H.; Hu, Y.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1021/acsnano.0c06541" target="_blank">10.1021/acsnano.0c06541</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">"An Oxygen Self-Evolving, Multistage Delivery System for Deeply Located Hypoxic Tumor Treatment"</td>
-        <td class="paper-author">Jiang, W.; Han, X.; Zhang, T.; Xie, D.; Zhang, H.; Hu, Y.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1002/adhm.201901303" target="_blank">10.1002/adhm.201901303</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Efficient Synthesis of Lactide with Low Racemization Catalyzed by Sodium Bicarbonate and Zinc Lactate</td>
-        <td class="paper-author">Zhang, Y.; Qi, Y.; Yin, Y.; Sun, P.; Li, A.; Zhang, Q.; Jiang, W.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1021/acssuschemeng.9b06987" target="_blank">10.1021/acssuschemeng.9b06987</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Nanostructure Control of a Regioregular Poly(3-alkylthiophene) Using an Oligopeptide Side Chain</td>
-        <td class="paper-author">Njenga, S.M.; Wang, X.; Jiang, W.; Wan, X.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1021/acs.macromol.9b02739" target="_blank">10.1021/acs.macromol.9b02739</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Polylactic Acid Nonwoven Fabric Surface Modified with Stereocomplex Crystals for Recyclable Use in Oil/Water Separation</td>
-        <td class="paper-author">Zhu, C.; Jiang, W.; Hu, J.; Sun, P.; Li, A.; Zhang, Q.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1021/acsapm.9b01197" target="_blank">10.1021/acsapm.9b01197</a></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <div class="paper-item">
+    <div class="paper-authors">1. Xia, D.; Hang, D.; Li, Y.; Jiang, W.; Zhu, J.; Ding, Y.; Gu, H.; Hu, Y.</div>
+    <div class="paper-title">"Au-Hemoglobin loaded platelet alleviating tumor hypoxia and enhancing the radiotherapy effect with low-dose x-ray"</div>
+    <div class="paper-journal">ACS Nano, 2020, <a href="https://doi.org/10.1021/acsnano.0c06541" target="_blank">doi.org/10.1021/acsnano.0c06541</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">2. Jiang, W.; Han, X.; Zhang, T.; Xie, D.; Zhang, H.; Hu, Y.</div>
+    <div class="paper-title">"An Oxygen Self-Evolving, Multistage Delivery System for Deeply Located Hypoxic Tumor Treatment"</div>
+    <div class="paper-journal">Advanced Healthcare Materials, 2020, <a href="https://doi.org/10.1002/adhm.201901303" target="_blank">doi.org/10.1002/adhm.201901303</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">3. Zhang, Y.; Qi, Y.; Yin, Y.; Sun, P.; Li, A.; Zhang, Q.; Jiang, W.</div>
+    <div class="paper-title">"Efficient Synthesis of Lactide with Low Racemization Catalyzed by Sodium Bicarbonate and Zinc Lactate"</div>
+    <div class="paper-journal">ACS Sustainable Chemistry & Engineering, 2020, <a href="https://doi.org/10.1021/acssuschemeng.9b06987" target="_blank">doi.org/10.1021/acssuschemeng.9b06987</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">4. Njenga, S.M.; Wang, X.; Jiang, W.; Wan, X.</div>
+    <div class="paper-title">"Nanostructure Control of a Regioregular Poly(3-alkylthiophene) Using an Oligopeptide Side Chain"</div>
+    <div class="paper-journal">Macromolecules, 2020, <a href="https://doi.org/10.1021/acs.macromol.9b02739" target="_blank">doi.org/10.1021/acs.macromol.9b02739</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">5. Zhu, C.; Jiang, W.; Hu, J.; Sun, P.; Li, A.; Zhang, Q.</div>
+    <div class="paper-title">"Polylactic Acid Nonwoven Fabric Surface Modified with Stereocomplex Crystals for Recyclable Use in Oil/Water Separation"</div>
+    <div class="paper-journal">ACS Applied Polymer Materials, 2020, <a href="https://doi.org/10.1021/acsapm.9b01197" target="_blank">doi.org/10.1021/acsapm.9b01197</a></div>
+  </div>
 </div>
 
 <div class="paper-year-section">
   <div class="paper-year-title">2019年</div>
-  <table class="paper-table">
-    <thead>
-      <tr>
-        <th>论文标题</th>
-        <th>作者</th>
-        <th>DOI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="paper-title">H2O2-Sensitive Upconversion Nanocluster Bomb for Tri-Mode Imaging-Guided Photodynamic Therapy in Deep Tumor Tissue</td>
-        <td class="paper-author">Jiang, W.; Zhang, C.; Ahmed, A.; Zhao, Y.; Deng, Y.; Ding, Y.; Cai, J.; Hu, Y.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1002/adhm.201900972" target="_blank">10.1002/adhm.201900972</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Rational design of a zwitterionic-phosphonic copolymer for the surface antifouling modification of multiple biomedical metals</td>
-        <td class="paper-author">Liu, H.; Liu, L.; Jiang, X.; Fan, J.; Peng, W.; Liu, P.; Yang, T.; Chen, H.; Jiang, W.; Yin, G.; Liu, P.; Shen, J.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1039/c9tb00856j" target="_blank">10.1039/c9tb00856j</a></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <div class="paper-item">
+    <div class="paper-authors">1. Jiang, W.; Zhang, C.; Ahmed, A.; Zhao, Y.; Deng, Y.; Ding, Y.; Cai, J.; Hu, Y.</div>
+    <div class="paper-title">"H2O2-Sensitive Upconversion Nanocluster Bomb for Tri-Mode Imaging-Guided Photodynamic Therapy in Deep Tumor Tissue"</div>
+    <div class="paper-journal">Advanced Healthcare Materials, 2019, <a href="https://doi.org/10.1002/adhm.201900972" target="_blank">doi.org/10.1002/adhm.201900972</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">2. Liu, H.; Liu, L.; Jiang, X.; Fan, J.; Peng, W.; Liu, P.; Yang, T.; Chen, H.; Jiang, W.; Yin, G.; Liu, P.; Shen, J.</div>
+    <div class="paper-title">"Rational design of a zwitterionic-phosphonic copolymer for the surface antifouling modification of multiple biomedical metals"</div>
+    <div class="paper-journal">Journal of Materials Chemistry B, 2019, <a href="https://doi.org/10.1039/c9tb00856j" target="_blank">doi.org/10.1039/c9tb00856j</a></div>
+  </div>
 </div>
 
 <div class="paper-year-section">
   <div class="paper-year-title">2018年</div>
-  <table class="paper-table">
-    <thead>
-      <tr>
-        <th>论文标题</th>
-        <th>作者</th>
-        <th>DOI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="paper-title">Controlled synthesis of PLA-series environment-friendly polymers with guanidine catalysts</td>
-        <td class="paper-author">Wang, Z.-Y.; He, W.-W.; Xu, Y.-L.; Huang, W.; Jiang, W.; Li, H.; Zhang, Q.-X.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.11777/j.issn1000-3304.2018.18036" target="_blank">10.11777/j.issn1000-3304.2018.18036</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">SYNTHESIS OF POLY(BUTYLENE SUCCINATE) WITH A BINARY TITANIUM CATALYST</td>
-        <td class="paper-author">Xu, Y.; He, W.; Huang, W.; Jiang, W.; Li, H.; Zhang, Q.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.16026/j.cnki.iea.2018010001" target="_blank">10.16026/j.cnki.iea.2018010001</a></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <div class="paper-item">
+    <div class="paper-authors">1. Wang, Z.-Y.; He, W.-W.; Xu, Y.-L.; Huang, W.; Jiang, W.; Li, H.; Zhang, Q.-X.</div>
+    <div class="paper-title">"Controlled synthesis of PLA-series environment-friendly polymers with guanidine catalysts"</div>
+    <div class="paper-journal">Chinese Journal of Polymer Science, 2018, <a href="https://doi.org/10.11777/j.issn1000-3304.2018.18036" target="_blank">doi.org/10.11777/j.issn1000-3304.2018.18036</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">2. Xu, Y.; He, W.; Huang, W.; Jiang, W.; Li, H.; Zhang, Q.</div>
+    <div class="paper-title">"SYNTHESIS OF POLY(BUTYLENE SUCCINATE) WITH A BINARY TITANIUM CATALYST"</div>
+    <div class="paper-journal">Industrial Engineering & Chemistry, 2018, <a href="https://doi.org/10.16026/j.cnki.iea.2018010001" target="_blank">doi.org/10.16026/j.cnki.iea.2018010001</a></div>
+  </div>
 </div>
 
 <div class="paper-year-section">
   <div class="paper-year-title">2017年</div>
-  <table class="paper-table">
-    <thead>
-      <tr>
-        <th>论文标题</th>
-        <th>作者</th>
-        <th>DOI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="paper-title">Green synthesis of glycolide via a closed repetitive process using organic guanidine as catalyst</td>
-        <td class="paper-author">Sheng, J.; Wang, Z.; Xu, Y.; Huang, W.; Jiang, W.; Li, H.; Zhang, Q.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.16026/j.cnki.iea.2017030193" target="_blank">10.16026/j.cnki.iea.2017030193</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">One-Step Synthesis of Biodegradable Polyurethane Prepolymer and Its Rapid Gelation Behavior at High Water Content</td>
-        <td class="paper-author">Mu, Y.; Xue, S.; Pei, D.; Jiang, W.; Wan, X.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1002/macp.201600369" target="_blank">10.1002/macp.201600369</a></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <div class="paper-item">
+    <div class="paper-authors">1. Sheng, J.; Wang, Z.; Xu, Y.; Huang, W.; Jiang, W.; Li, H.; Zhang, Q.</div>
+    <div class="paper-title">"Green synthesis of glycolide via a closed repetitive process using organic guanidine as catalyst"</div>
+    <div class="paper-journal">Industrial Engineering & Chemistry, 2017, <a href="https://doi.org/10.16026/j.cnki.iea.2017030193" target="_blank">doi.org/10.16026/j.cnki.iea.2017030193</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">2. Mu, Y.; Xue, S.; Pei, D.; Jiang, W.; Wan, X.</div>
+    <div class="paper-title">"One-Step Synthesis of Biodegradable Polyurethane Prepolymer and Its Rapid Gelation Behavior at High Water Content"</div>
+    <div class="paper-journal">Macromolecular Chemistry and Physics, 2017, <a href="https://doi.org/10.1002/macp.201600369" target="_blank">doi.org/10.1002/macp.201600369</a></div>
+  </div>
 </div>
 
 <div class="paper-year-section">
   <div class="paper-year-title">2016年</div>
-  <table class="paper-table">
-    <thead>
-      <tr>
-        <th>论文标题</th>
-        <th>作者</th>
-        <th>DOI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="paper-title">A simple and fast formation of biodegradable poly(urethane-urea) hydrogel with high water content and good mechanical property</td>
-        <td class="paper-author">Xue, S.; Pei, D.; Jiang, W.; Mu, Y.; Wan, X.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.polymer.2016.07.034" target="_blank">10.1016/j.polymer.2016.07.034</a></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <div class="paper-item">
+    <div class="paper-authors">1. Xue, S.; Pei, D.; Jiang, W.; Mu, Y.; Wan, X.</div>
+    <div class="paper-title">"A simple and fast formation of biodegradable poly(urethane-urea) hydrogel with high water content and good mechanical property"</div>
+    <div class="paper-journal">Polymer, 2016, <a href="https://doi.org/10.1016/j.polymer.2016.07.034" target="_blank">doi.org/10.1016/j.polymer.2016.07.034</a></div>
+  </div>
 </div>
 
 <div class="paper-year-section">
   <div class="paper-year-title">2015年</div>
-  <table class="paper-table">
-    <thead>
-      <tr>
-        <th>论文标题</th>
-        <th>作者</th>
-        <th>DOI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="paper-title">Humid bonding with a water-soluble adhesive inspired by mussels and sandcastle worms</td>
-        <td class="paper-author">Li, A.; Jia, M.; Mu, Y.; Jiang, W.; Wan, X.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1002/macp.201400513" target="_blank">10.1002/macp.201400513</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">A mussel-inspired adhesive with stronger bonding strength under underwater conditions than under dry conditions</td>
-        <td class="paper-author">Li, A.; Mu, Y.; Jiang, W.; Wan, X.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1039/c5cc00101c" target="_blank">10.1039/c5cc00101c</a></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <div class="paper-item">
+    <div class="paper-authors">1. Li, A.; Jia, M.; Mu, Y.; Jiang, W.; Wan, X.</div>
+    <div class="paper-title">"Humid bonding with a water-soluble adhesive inspired by mussels and sandcastle worms"</div>
+    <div class="paper-journal">Macromolecular Chemistry and Physics, 2015, <a href="https://doi.org/10.1002/macp.201400513" target="_blank">doi.org/10.1002/macp.201400513</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">2. Li, A.; Mu, Y.; Jiang, W.; Wan, X.</div>
+    <div class="paper-title">"A mussel-inspired adhesive with stronger bonding strength under underwater conditions than under dry conditions"</div>
+    <div class="paper-journal">Chemical Communications, 2015, <a href="https://doi.org/10.1039/c5cc00101c" target="_blank">doi.org/10.1039/c5cc00101c</a></div>
+  </div>
 </div>
 
 <div class="paper-year-section">
   <div class="paper-year-title">2014年</div>
-  <table class="paper-table">
-    <thead>
-      <tr>
-        <th>论文标题</th>
-        <th>作者</th>
-        <th>DOI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="paper-title">"Synthesis, characterization and thermal properties of polystyrene- poly(lactic acid)-polystyrene triblock copolymer via atom transfer radical polymerization"</td>
-        <td class="paper-author">Shen, J.; Jiang, W.; Liu, Y.; Wei, R.-Q.; Zhong, Y.; Li, L.-L.; Xue, G.; Liu, X.-N.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1177/0892705712464635" target="_blank">10.1177/0892705712464635</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Green synthesis of enantiomerically pure l-lactide and d-lactide using biogenic creatinine catalyst</td>
-        <td class="paper-author">Huang, W.; Qi, Y.; Cheng, N.; Zong, X.; Zhang, T.; Jiang, W.; Li, H.; Zhang, Q.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.polymdegradstab.2014.01.022" target="_blank">10.1016/j.polymdegradstab.2014.01.022</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Synthesis and adhesive property study of polyoxetanes grafted with catechols via Cu(I)-catalyzed click chemistry</td>
-        <td class="paper-author">Jia, M.; Li, A.; Mu, Y.; Jiang, W.; Wan, X.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.polymer.2014.01.028" target="_blank">10.1016/j.polymer.2014.01.028</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Synthesis of high molecular weight poly(l-lactic acid) and poly(d-lactic acid) with improved thermal stability via melt/solid polycondensation catalyzed by biogenic creatinine</td>
-        <td class="paper-author">Huang, W.; Cheng, N.; Qi, Y.; Zhang, T.; Jiang, W.; Li, H.; Zhang, Q.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.polymer.2014.01.054" target="_blank">10.1016/j.polymer.2014.01.054</a></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <div class="paper-item">
+    <div class="paper-authors">1. Shen, J.; Jiang, W.; Liu, Y.; Wei, R.-Q.; Zhong, Y.; Li, L.-L.; Xue, G.; Liu, X.-N.</div>
+    <div class="paper-title">"Synthesis, characterization and thermal properties of polystyrene- poly(lactic acid)-polystyrene triblock copolymer via atom transfer radical polymerization"</div>
+    <div class="paper-journal">Journal of Reinforced Plastics and Composites, 2014, <a href="https://doi.org/10.1177/0892705712464635" target="_blank">doi.org/10.1177/0892705712464635</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">2. Huang, W.; Qi, Y.; Cheng, N.; Zong, X.; Zhang, T.; Jiang, W.; Li, H.; Zhang, Q.</div>
+    <div class="paper-title">"Green synthesis of enantiomerically pure l-lactide and d-lactide using biogenic creatinine catalyst"</div>
+    <div class="paper-journal">Polymer Degradation and Stability, 2014, <a href="https://doi.org/10.1016/j.polymdegradstab.2014.01.022" target="_blank">doi.org/10.1016/j.polymdegradstab.2014.01.022</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">3. Jia, M.; Li, A.; Mu, Y.; Jiang, W.; Wan, X.</div>
+    <div class="paper-title">"Synthesis and adhesive property study of polyoxetanes grafted with catechols via Cu(I)-catalyzed click chemistry"</div>
+    <div class="paper-journal">Polymer, 2014, <a href="https://doi.org/10.1016/j.polymer.2014.01.028" target="_blank">doi.org/10.1016/j.polymer.2014.01.028</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">4. Huang, W.; Cheng, N.; Qi, Y.; Zhang, T.; Jiang, W.; Li, H.; Zhang, Q.</div>
+    <div class="paper-title">"Synthesis of high molecular weight poly(l-lactic acid) and poly(d-lactic acid) with improved thermal stability via melt/solid polycondensation catalyzed by biogenic creatinine"</div>
+    <div class="paper-journal">Polymer, 2014, <a href="https://doi.org/10.1016/j.polymer.2014.01.054" target="_blank">doi.org/10.1016/j.polymer.2014.01.054</a></div>
+  </div>
 </div>
 
 <div class="paper-year-section">
   <div class="paper-year-title">2013年</div>
-  <table class="paper-table">
-    <thead>
-      <tr>
-        <th>论文标题</th>
-        <th>作者</th>
-        <th>DOI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="paper-title">Polythiophene with oligopeptide side chain: Preparation and nano-structure</td>
-        <td class="paper-author">Wang, X.; Gong, R.; Song, Y.; Li, M.; Mu, Y.; Guo, Z.; Wan, X.; Jiang, W.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1080/10610278.2013.809086" target="_blank">10.1080/10610278.2013.809086</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">A transient polymorph transition of 4-cyano-4′-octyloxybiphenyl (8OCB) revealed by ultrafast differential scanning calorimetry (UFDSC)</td>
-        <td class="paper-author">Jiang, J.; Zhuravlev, E.; Huang, Z.; Wei, L.; Xu, Q.; Shan, M.; Xue, G.; Zhou, D.; Schick, C.; Jiang, W.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1039/c2sm27012a" target="_blank">10.1039/c2sm27012a</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">"A novel branched polyoxymethylene synthesized by cationic copolymerization of 1,3,5-trioxane with 3-(alkoxymethyl)-3-ethyloxetane"</td>
-        <td class="paper-author">Mu, Y.; Jia, M.; Jiang, W.; Wan, X.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1002/macp.201300473" target="_blank">10.1002/macp.201300473</a></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <div class="paper-item">
+    <div class="paper-authors">1. Wang, X.; Gong, R.; Song, Y.; Li, M.; Mu, Y.; Guo, Z.; Wan, X.; Jiang, W.</div>
+    <div class="paper-title">"Polythiophene with oligopeptide side chain: Preparation and nano-structure"</div>
+    <div class="paper-journal">Journal of Macromolecular Science, Part B: Physics, 2013, <a href="https://doi.org/10.1080/10610278.2013.809086" target="_blank">doi.org/10.1080/10610278.2013.809086</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">2. Jiang, J.; Zhuravlev, E.; Huang, Z.; Wei, L.; Xu, Q.; Shan, M.; Xue, G.; Zhou, D.; Schick, C.; Jiang, W.</div>
+    <div class="paper-title">"A transient polymorph transition of 4-cyano-4′-octyloxybiphenyl (8OCB) revealed by ultrafast differential scanning calorimetry (UFDSC)"</div>
+    <div class="paper-journal">Soft Matter, 2013, <a href="https://doi.org/10.1039/c2sm27012a" target="_blank">doi.org/10.1039/c2sm27012a</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">3. Mu, Y.; Jia, M.; Jiang, W.; Wan, X.</div>
+    <div class="paper-title">"A novel branched polyoxymethylene synthesized by cationic copolymerization of 1,3,5-trioxane with 3-(alkoxymethyl)-3-ethyloxetane"</div>
+    <div class="paper-journal">Macromolecular Chemistry and Physics, 2013, <a href="https://doi.org/10.1002/macp.201300473" target="_blank">doi.org/10.1002/macp.201300473</a></div>
+  </div>
 </div>
 
 <div class="paper-year-section">
   <div class="paper-year-title">2012年</div>
-  <table class="paper-table">
-    <thead>
-      <tr>
-        <th>论文标题</th>
-        <th>作者</th>
-        <th>DOI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="paper-title">Protective effect of l-theanine on carbon tetrachloride-induced acute liver injury in mice</td>
-        <td class="paper-author">Jiang, W.; Gao, M.; Sun, S.; Bi, A.; Xin, Y.; Han, X.; Wang, L.; Yin, Z.; Luo, L.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.bbrc.2012.05.022" target="_blank">10.1016/j.bbrc.2012.05.022</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Synthesis and thermal properties of poly(methyl methacrylate)-poly(L-lactic acid)-poly(methyl methacrylate) tri-block copolymer</td>
-        <td class="paper-author">Shen, J.; Jiang, W.; Liu, Y.; Wei, R.; Liu, X.; Zhong, Y.; Xu, J.; Li, L.; Xue, G.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1002/app.35503" target="_blank">10.1002/app.35503</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">L-Theanine prevents alcoholic liver injury through enhancing the antioxidant capability of hepatocytes</td>
-        <td class="paper-author">Li, G.; Ye, Y.; Kang, J.; Yao, X.; Zhang, Y.; Jiang, W.; Gao, M.; Dai, Y.; Xin, Y.; Wang, Q.; Yin, Z.; Luo, L.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.fct.2011.10.036" target="_blank">10.1016/j.fct.2011.10.036</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Isotactic polycondensation of l-lactic acid with biogenic creatinine</td>
-        <td class="paper-author">Jiang, W.; Huang, W.; Cheng, N.; Qi, Y.; Zong, X.; Li, H.; Zhang, Q.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.polymer.2012.09.044" target="_blank">10.1016/j.polymer.2012.09.044</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Reentanglement kinetics of freeze-dried polymers above the glass transition temperature</td>
-        <td class="paper-author">Teng, C.; Gao, Y.; Wang, X.; Jiang, W.; Zhang, C.; Wang, R.; Zhou, D.; Xue, G.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1021/ma300885w" target="_blank">10.1021/ma300885w</a></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <div class="paper-item">
+    <div class="paper-authors">1. Jiang, W.; Gao, M.; Sun, S.; Bi, A.; Xin, Y.; Han, X.; Wang, L.; Yin, Z.; Luo, L.</div>
+    <div class="paper-title">"Protective effect of l-theanine on carbon tetrachloride-induced acute liver injury in mice"</div>
+    <div class="paper-journal">Biochemical and Biophysical Research Communications, 2012, <a href="https://doi.org/10.1016/j.bbrc.2012.05.022" target="_blank">doi.org/10.1016/j.bbrc.2012.05.022</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">2. Shen, J.; Jiang, W.; Liu, Y.; Wei, R.; Liu, X.; Zhong, Y.; Xu, J.; Li, L.; Xue, G.</div>
+    <div class="paper-title">"Synthesis and thermal properties of poly(methyl methacrylate)-poly(L-lactic acid)-poly(methyl methacrylate) tri-block copolymer"</div>
+    <div class="paper-journal">Journal of Applied Polymer Science, 2012, <a href="https://doi.org/10.1002/app.35503" target="_blank">doi.org/10.1002/app.35503</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">3. Li, G.; Ye, Y.; Kang, J.; Yao, X.; Zhang, Y.; Jiang, W.; Gao, M.; Dai, Y.; Xin, Y.; Wang, Q.; Yin, Z.; Luo, L.</div>
+    <div class="paper-title">"L-Theanine prevents alcoholic liver injury through enhancing the antioxidant capability of hepatocytes"</div>
+    <div class="paper-journal">Food and Chemical Toxicology, 2012, <a href="https://doi.org/10.1016/j.fct.2011.10.036" target="_blank">doi.org/10.1016/j.fct.2011.10.036</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">4. Jiang, W.; Huang, W.; Cheng, N.; Qi, Y.; Zong, X.; Li, H.; Zhang, Q.</div>
+    <div class="paper-title">"Isotactic polycondensation of l-lactic acid with biogenic creatinine"</div>
+    <div class="paper-journal">Polymer, 2012, <a href="https://doi.org/10.1016/j.polymer.2012.09.044" target="_blank">doi.org/10.1016/j.polymer.2012.09.044</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">5. Teng, C.; Gao, Y.; Wang, X.; Jiang, W.; Zhang, C.; Wang, R.; Zhou, D.; Xue, G.</div>
+    <div class="paper-title">"Reentanglement kinetics of freeze-dried polymers above the glass transition temperature"</div>
+    <div class="paper-journal">Macromolecules, 2012, <a href="https://doi.org/10.1021/ma300885w" target="_blank">doi.org/10.1021/ma300885w</a></div>
+  </div>
 </div>
 
 <div class="paper-year-section">
   <div class="paper-year-title">2011年</div>
-  <table class="paper-table">
-    <thead>
-      <tr>
-        <th>论文标题</th>
-        <th>作者</th>
-        <th>DOI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="paper-title">Verifying the symmetry of ultra-fast scanning calorimeters using liquid crystal secondary temperature standards</td>
-        <td class="paper-author">Chen, M.; Du, M.; Jiang, J.; Li, D.; Jiang, W.; Zhuravlev, E.; Zhou, D.; Schick, C.; Xue, G.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.tca.2011.08.020" target="_blank">10.1016/j.tca.2011.08.020</a></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <div class="paper-item">
+    <div class="paper-authors">1. Chen, M.; Du, M.; Jiang, J.; Li, D.; Jiang, W.; Zhuravlev, E.; Zhou, D.; Schick, C.; Xue, G.</div>
+    <div class="paper-title">"Verifying the symmetry of ultra-fast scanning calorimeters using liquid crystal secondary temperature standards"</div>
+    <div class="paper-journal">Thermochimica Acta, 2011, <a href="https://doi.org/10.1016/j.tca.2011.08.020" target="_blank">doi.org/10.1016/j.tca.2011.08.020</a></div>
+  </div>
 </div>
 
 <div class="paper-year-section">
   <div class="paper-year-title">2010年</div>
-  <table class="paper-table">
-    <thead>
-      <tr>
-        <th>论文标题</th>
-        <th>作者</th>
-        <th>DOI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="paper-title">Calorimetric study of blend miscibility of polymers confined in ultra-thin films</td>
-        <td class="paper-author">Jiang, W.; Du, M.; Gu, Q.; Jiang, J.; Huth, H.; Zhou, D.; Xue, G.; Schick, C.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1140/epjst/e2010-01322-0" target="_blank">10.1140/epjst/e2010-01322-0</a></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <div class="paper-item">
+    <div class="paper-authors">1. Jiang, W.; Du, M.; Gu, Q.; Jiang, J.; Huth, H.; Zhou, D.; Xue, G.; Schick, C.</div>
+    <div class="paper-title">"Calorimetric study of blend miscibility of polymers confined in ultra-thin films"</div>
+    <div class="paper-journal">The European Physical Journal Special Topics, 2010, <a href="https://doi.org/10.1140/epjst/e2010-01322-0" target="_blank">doi.org/10.1140/epjst/e2010-01322-0</a></div>
+  </div>
 </div>
 
 <div class="paper-year-section">
   <div class="paper-year-title">2009年</div>
-  <table class="paper-table">
-    <thead>
-      <tr>
-        <th>论文标题</th>
-        <th>作者</th>
-        <th>DOI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="paper-title">DNA/chitosan nanocomplex as a novel drug carrier for doxorubicin</td>
-        <td class="paper-author">Cheng, X.; Zhang, F.; Zhou, G.; Gao, S.; Dong, L.; Jiang, W.; Ding, Z.; Chen, J.; Zhang, J.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1080/10717540802605376" target="_blank">10.1080/10717540802605376</a></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <div class="paper-item">
+    <div class="paper-authors">1. Cheng, X.; Zhang, F.; Zhou, G.; Gao, S.; Dong, L.; Jiang, W.; Ding, Z.; Chen, J.; Zhang, J.</div>
+    <div class="paper-title">"DNA/chitosan nanocomplex as a novel drug carrier for doxorubicin"</div>
+    <div class="paper-journal">Journal of Drug Targeting, 2009, <a href="https://doi.org/10.1080/10717540802605376" target="_blank">doi.org/10.1080/10717540802605376</a></div>
+  </div>
 </div>
 
 <div class="paper-year-section">
   <div class="paper-year-title">2008年</div>
-  <table class="paper-table">
-    <thead>
-      <tr>
-        <th>论文标题</th>
-        <th>作者</th>
-        <th>DOI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="paper-title">Enthalpy relaxation near the glass transition of polystyrenes with controlled interchain proximity</td>
-        <td class="paper-author">Jiang, W.; Zuo, C.; Hu, J.; Gu, Q.; Chen, W.; Xue, G.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1021/ma8005153" target="_blank">10.1021/ma8005153</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Structural relaxation of polystyrene glasses with dis-interpenetrated chains studied by differential scanning calorimetry</td>
-        <td class="paper-author">Chen, W.; Jiang, W.; Tao, F.; Xue, G.; Liu, X.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1080/00222340802118986" target="_blank">10.1080/00222340802118986</a></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <div class="paper-item">
+    <div class="paper-authors">1. Jiang, W.; Zuo, C.; Hu, J.; Gu, Q.; Chen, W.; Xue, G.</div>
+    <div class="paper-title">"Enthalpy relaxation near the glass transition of polystyrenes with controlled interchain proximity"</div>
+    <div class="paper-journal">Macromolecules, 2008, <a href="https://doi.org/10.1021/ma8005153" target="_blank">doi.org/10.1021/ma8005153</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">2. Chen, W.; Jiang, W.; Tao, F.; Xue, G.; Liu, X.</div>
+    <div class="paper-title">"Structural relaxation of polystyrene glasses with dis-interpenetrated chains studied by differential scanning calorimetry"</div>
+    <div class="paper-journal">Journal of Macromolecular Science, Part B: Physics, 2008, <a href="https://doi.org/10.1080/00222340802118986" target="_blank">doi.org/10.1080/00222340802118986</a></div>
+  </div>
 </div>
 
 <div class="paper-year-section">
   <div class="paper-year-title">2007年</div>
-  <table class="paper-table">
-    <thead>
-      <tr>
-        <th>论文标题</th>
-        <th>作者</th>
-        <th>DOI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="paper-title">Ferromagnetic conductive polypyrrole doped with water-soluble ferrocene derivative</td>
-        <td class="paper-author">Yang, H.; Jiang, W.; Lu, Y.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.matlet.2006.07.051" target="_blank">10.1016/j.matlet.2006.07.051</a></td>
-      </tr>
-      <tr>
-        <td class="paper-title">Fabrication and characteristic of conductive and ferromagnetic hollow composite microcapsules</td>
-        <td class="paper-author">Yang, H.; Jiang, W.; Lu, Y.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.matlet.2006.10.031" target="_blank">10.1016/j.matlet.2006.10.031</a></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <div class="paper-item">
+    <div class="paper-authors">1. Yang, H.; Jiang, W.; Lu, Y.</div>
+    <div class="paper-title">"Ferromagnetic conductive polypyrrole doped with water-soluble ferrocene derivative"</div>
+    <div class="paper-journal">Materials Letters, 2007, <a href="https://doi.org/10.1016/j.matlet.2006.07.051" target="_blank">doi.org/10.1016/j.matlet.2006.07.051</a></div>
+  </div>
+  
+  <div class="paper-item">
+    <div class="paper-authors">2. Yang, H.; Jiang, W.; Lu, Y.</div>
+    <div class="paper-title">"Fabrication and characteristic of conductive and ferromagnetic hollow composite microcapsules"</div>
+    <div class="paper-journal">Materials Letters, 2007, <a href="https://doi.org/10.1016/j.matlet.2006.10.031" target="_blank">doi.org/10.1016/j.matlet.2006.10.031</a></div>
+  </div>
 </div>
 
 <div class="paper-year-section">
   <div class="paper-year-title">2005年</div>
-  <table class="paper-table">
-    <thead>
-      <tr>
-        <th>论文标题</th>
-        <th>作者</th>
-        <th>DOI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="paper-title">Convenient synthesis of new water-soluble monosubstituted functional ferrocene derivatives</td>
-        <td class="paper-author">Yang, H.; Chen, X.; Jiang, W.; Lu, Y.</td>
-        <td class="paper-doi"><a href="https://doi.org/10.1016/j.inoche.2005.05.025" target="_blank">10.1016/j.inoche.2005.05.025</a></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <div class="paper-item">
+    <div class="paper-authors">1. Yang, H.; Chen, X.; Jiang, W.; Lu, Y.</div>
+    <div class="paper-title">"Convenient synthesis of new water-soluble monosubstituted functional ferrocene derivatives"</div>
+    <div class="paper-journal">Inorganic Chemistry Communications, 2005, <a href="https://doi.org/10.1016/j.inoche.2005.05.025" target="_blank">doi.org/10.1016/j.inoche.2005.05.025</a></div>
+  </div>
 </div>
 
 <h3 id="授权专利"><a href="#授权专利" class="headerlink" title="授权专利"></a>授权专利</h3><ul>
