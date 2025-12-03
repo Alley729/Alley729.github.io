@@ -85,22 +85,8 @@
 </header>
 
     <section>
-      <div class="container">
-  <div class="banner mb-5">
-  <div class="banner-text text-center">
-    <!-- page-type-title -->
-    
-      
-<h1 class="page-type-title">学术成果</h1>
-    
-    <!-- page-type-slogan -->
-    <h4 class="slogan font-w-lighter">
-    
-      运维更智能 部署更方便 应用更便捷
-    
-    </h4>
-  </div>
-</div>
+      <div class="container-fluid">
+  
   
   <article id="page-" class="article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
@@ -161,6 +147,26 @@
 }
 .paper-journal a:hover {
   text-decoration: underline;
+}
+.paper-year-section-before .paper-item {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  overflow-x: auto;
+}
+.paper-year-section-before .paper-authors {
+  margin-right: 10px;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+.paper-year-section-before .paper-title {
+  margin-right: 10px;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+.paper-year-section-before .paper-journal {
+  margin-bottom: 0;
+  white-space: nowrap;
 }
 </style>
 
@@ -513,7 +519,7 @@
    </div>
 </div>
 
-<div class="paper-year-section">
+<div class="paper-year-section paper-year-section-before">
   <div class="paper-year-title">before</div>
   
   <div class="paper-item">
