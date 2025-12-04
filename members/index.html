@@ -6,7 +6,7 @@
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-  <title>members |  江伟课题组</title>
+  <title>团队成员 |  江伟课题组</title>
   
     <link rel="apple-touch-icon" sizes="57x57" href="/images/webclip.png/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/images/webclip.png/apple-touch-icon-72x72.png">
@@ -22,6 +22,7 @@
     <link rel="shortcut icon" href="/images/favicon.png">
   
   
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   
 <link rel="stylesheet" href="/css/style.css">
 
@@ -41,37 +42,27 @@
   
     
   <li class="nav-item ">
-    <a class="nav-item-link" href="/shouye">首页</a>
-  </li>
-  
-    
-  <li class="nav-item ">
-    <a class="nav-item-link" href="/research">研究方向</a>
-  </li>
-  
-    
-  <li class="nav-item ">
-    <a class="nav-item-link" href="/projects">科研项目</a>
-  </li>
-  
-    
-  <li class="nav-item ">
-    <a class="nav-item-link" href="/papers">学术成果</a>
+    <a class="nav-item-link" href="/research">RESEARCH</a>
   </li>
   
     
   <li class="nav-item active">
-    <a class="nav-item-link" href="/members">团队成员</a>
+    <a class="nav-item-link" href="/members">PEOPLE</a>
   </li>
   
     
   <li class="nav-item ">
-    <a class="nav-item-link" href="/admission">招生信息</a>
+    <a class="nav-item-link" href="/papers">PUBLICTION</a>
   </li>
   
     
   <li class="nav-item ">
-    <a class="nav-item-link" href="/contact">联系我们</a>
+    <a class="nav-item-link" href="/gallery">GALLERY</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/contact">CONTACT</a>
   </li>
   
 </ul>
@@ -87,22 +78,6 @@
     <section>
       <div class="container-fluid">
   
-<div class="banner mb-5">
-  <div class="banner-text text-center">
-    <!-- page-type-title -->
-    
-      
-<h1 class="page-type-title">members</h1>
-    
-    <!-- page-type-slogan -->
-    <h4 class="slogan font-w-lighter">
-    
-      运维更智能 部署更方便 应用更便捷
-    
-    </h4>
-  </div>
-</div>
-
   
   <article id="page-" class="article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
@@ -114,7 +89,439 @@
     </header>
     
     <div class="article-entry" itemprop="articleBody">
-      
+      <style>
+.member-section {
+  margin: 30px 0;
+}
+.member-section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #a32d10ff;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #499ae6b2;
+}
+.member-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px 0;
+}
+.member-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+.member-card-header {
+  padding: 20px;
+}
+.member-photo {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin: 0 auto 15px;
+  display: block;
+  border-radius: 4px;
+}
+.member-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  color: #000;
+}
+.member-period {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 10px 0;
+}
+.member-title {
+  font-size: 14px;
+  color: #227974ff;
+  margin: 0;
+}
+.member-section.professor .member-card {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  grid-column: span 3;
+  text-align: left;
+}
+.member-section.professor .member-card-header {
+  width: 250px;
+  flex-shrink: 0;
+}
+.member-section.professor .member-card-body {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.member-section.professor .member-cards {
+  grid-template-columns: 1fr;
+}
+.member-section.professor .member-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #499ae6b2;
+}
+.member-info {
+  font-size: 14px;
+  margin: 5px 0;
+  line-height: 1.5;
+}
+.professor-info {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+.professor-info-column {
+  flex: 1;
+}
+.professor-info-title {
+  font-weight: bold;
+  margin: 15px 0 10px 0;
+  color: #a32d10ff;
+  font-size: 16px;
+}
+.article-inner {
+  max-width: 90% !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* 已毕业成员样式 */
+.member-section.graduated .member-cards {
+  display: block;
+  grid-template-columns: none;
+  gap: 0;
+  text-align: left;
+}
+.member-section.graduated .member-card {
+  display: block;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 5px 0;
+  text-align: left;
+}
+.member-section.graduated .member-card-header {
+  padding: 0;
+  text-align: left;
+}
+.member-section.graduated .member-photo {
+  display: none;
+}
+.member-section.graduated .member-name,
+.member-section.graduated .member-period,
+.member-section.graduated .member-title {
+  display: inline;
+  font-size: 14px;
+  margin: 0;
+  text-align: left;
+}
+.member-section.graduated .member-name {
+  font-weight: normal;
+}
+.member-section.graduated .member-card {
+  transition: none;
+}
+.member-section.graduated .member-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+@media (max-width: 1200px) {
+  .member-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .member-section.professor .member-card {
+    grid-column: span 2;
+  }
+}
+/* 样条样式 */
+.member-divider {
+  height: 8px;
+  background-color: #a32d10ff;
+  margin: 30px 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .member-cards {
+    grid-template-columns: 1fr;
+  }
+  .member-section.professor .member-card {
+    grid-column: span 1;
+    flex-wrap: wrap;
+  }
+  .member-section.professor .member-card-header {
+    width: 100%;
+    text-align: center;
+  }
+  .professor-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+</style>
+
+<div class="member-section professor">
+  <div class="member-section-title">教授</div>
+  
+  <div class="member-cards">
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="江伟" class="member-photo">
+        <div class="member-name">江伟 Wei Jiang</div>
+        <div class="member-title">南京大学教授级高级工程师、硕士生导师</div>
+      </div>
+      <div class="member-card-body">
+        <div class="member-info">2015年国家科学技术进步二等奖</div>
+        <div class="member-info">2015年江苏省科学技术一等奖</div>
+        <div class="member-info">2020年度南京市中青年拔尖人才</div>
+        <div class="member-info">代填</div>
+        <div class="member-info">代填</div>
+        <div class="member-info">代填</div>
+        <div class="member-info">代填</div>
+        <div class="professor-info">
+          <div class="professor-info-column">
+            <div class="professor-info-title">研究经历</div>
+            <div class="member-info">代填</div>
+            <div class="member-info">代填</div>
+            <div class="member-info">代填</div>
+            <div class="member-info">代填</div>
+          </div>
+          <div class="professor-info-column">
+            <div class="professor-info-title">教育背景</div>
+            <div class="member-info">代填</div>
+            <div class="member-info">代填</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="member-divider"></div>
+
+<div class="member-section">
+  <div class="member-section-title">博士后</div>
+  
+  <div class="member-cards">
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="朱晨曦" class="member-photo">
+        <div class="member-name">朱晨曦 Dr. Chenxi Zhu</div>
+        <div class="member-period">代填</div>
+        <div class="member-title">代填</div>
+      </div>
+    </div>
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="齐运彪" class="member-photo">
+        <div class="member-name">齐运彪 Dr. Yunbiao Qi</div>
+        <div class="member-period">代填</div>
+        <div class="member-title">代填</div>
+      </div>
+    </div>
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="黄伟" class="member-photo">
+        <div class="member-name">黄伟 Dr. Wei Huang</div>
+        <div class="member-period">代填</div>
+        <div class="member-title">代填</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="member-section">
+  <div class="member-section-title">博士生</div>
+  
+  <div class="member-cards">
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="张延凯" class="member-photo">
+        <div class="member-name">张延凯 Mr. Yankai Zhang</div>
+        <div class="member-period">2022.09 - Present</div>
+        <div class="member-title">Ph.D. Candidate of Nanjing University</div>
+      </div>
+    </div>
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="王浩伊" class="member-photo">
+        <div class="member-name">王浩伊 Ms. Haoyi Wang</div>
+        <div class="member-period">2022.09 - Present</div>
+        <div class="member-title">Ph.D. Candidate of Nanjing University</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="member-section">
+  <div class="member-section-title">硕士生</div>
+  
+  <div class="member-cards">
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="郑鹏飞" class="member-photo">
+        <div class="member-name">郑鹏飞 Mr. Pengfei Zheng</div>
+        <div class="member-period">2023.09 - Present</div>
+        <div class="member-title">Master Candidate of Nanjing University</div>
+      </div>
+    </div>
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="余世凡" class="member-photo">
+        <div class="member-name">余世凡 Mr. Shifang Yu</div>
+        <div class="member-period">2023.09 - Present</div>
+        <div class="member-title">Master Candidate of Nanjing University</div>
+      </div>
+    </div>
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="陆凯" class="member-photo">
+        <div class="member-name">陆凯 Mr. Kai Lu</div>
+        <div class="member-period">2024.09 - Present</div>
+        <div class="member-title">Master Candidate of Nanjing University</div>
+      </div>
+    </div>
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="朱梦婕" class="member-photo">
+        <div class="member-name">朱梦婕 Ms. Mengjie Zhu</div>
+        <div class="member-period">2024.09 - Present</div>
+        <div class="member-title">Master Candidate of Nanjing University</div>
+      </div>
+    </div>
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="梁宇" class="member-photo">
+        <div class="member-name">梁宇 Ms. Yu Liang</div>
+        <div class="member-period">2024.09 - Present</div>
+        <div class="member-title">Master Candidate of Nanjing University</div>
+      </div>
+    </div>
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="肖宏斌" class="member-photo">
+        <div class="member-name">肖宏斌 Mr. Hongbin Xiao</div>
+        <div class="member-period">2025.09 - Present</div>
+        <div class="member-title">Master Candidate of Nanjing University</div>
+      </div>
+    </div>
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="黄浩桢" class="member-photo">
+        <div class="member-name">黄浩桢 Ms. Haozhen Huang</div>
+        <div class="member-period">2025.09 - Present</div>
+        <div class="member-title">Master Candidate of Fudan University</div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="member-divider"></div>
+
+<div class="member-section graduated">
+  <div class="member-section-title">已毕业成员</div>
+  
+  <div class="member-cards">
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="陈凯旋" class="member-photo">
+        <div class="member-name">陈凯旋</div>
+        <div class="member-period">2019/09-2025/06;</div>
+        <div class="member-title"> Mr. Kaixuan Chen, Ph.D. of Fudan University, PostDoc@UNSW</div>
+      </div>
+    </div>
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="王怀姣" class="member-photo">
+        <div class="member-name">王怀姣</div>
+        <div class="member-period">2022/09-2025/06;</div>
+        <div class="member-title"> Ms. Huaijiao Wang, Master Degree of Fudan University, Ph.D. candidate@HKUST</div>
+      </div>
+    </div>
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="张鲁" class="member-photo">
+        <div class="member-name">张鲁</div>
+        <div class="member-period">2020/09-2024/12;</div>
+        <div class="member-title">2nd Mr. Lu Zhang, Ph.D. of Fudan University</div>
+      </div>
+    </div>
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="韩善涛" class="member-photo">
+        <div class="member-name">韩善涛</div>
+        <div class="member-period">2018/09-2024/06;</div>
+        <div class="member-title"> Mr. Shantao Han, Ph.D. of Fudan University, PostDoc@Columbia University</div>
+      </div>
+    </div>
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="谷宇" class="member-photo">
+        <div class="member-name">谷宇</div>
+        <div class="member-period">2019/09-2024/06;</div>
+        <div class="member-title">2nd Mr. Yu Gu, Ph.D. of Fudan University, working@Dow Company</div>
+      </div>
+    </div>
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="马明钰" class="member-photo">
+        <div class="member-name">马明钰</div>
+        <div class="member-period">2018/09-2024/06;</div>
+        <div class="member-title"> Ms. Mingyu Ma, Ph.D. of Fudan University, working@Huazhong Agricultural University</div>
+      </div>
+    </div>
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="陈宇飞" class="member-photo">
+        <div class="member-name">陈宇飞</div>
+        <div class="member-period">2021/09-2024/06;</div>
+        <div class="member-title"> Mr. Yufei Chen, Master Degree of Fudan University, graduate student@Washington University in St. Louis</div>
+      </div>
+    </div>
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="符杨康" class="member-photo">
+        <div class="member-name">符杨康</div>
+        <div class="member-period">2021/09-2024/06;</div>
+        <div class="member-title"> Mr. Yangkang Fu, Master Degree of Fudan University</div>
+      </div>
+    </div
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="蔡展翔" class="member-photo">
+        <div class="member-name">蔡展翔</div>
+        <div class="member-period">2023/09-2024/06;</div>
+        <div class="member-title">1st Mr. Zhanxiang Cai, undergraduate student of Fudan University</div>
+      </div>
+    </div>
+    <div class="member-card">
+      <div class="member-card-header">
+        <img src="#" alt="肖晨曦" class="member-photo">
+        <div class="member-name">肖晨曦</div>
+        <div class="member-period">2023/10-2024/08;</div>
+        <div class="member-title"> Mr. Chenxi Xiao, visiting graduate student from Yunnan University</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
     </div>
     <footer class="article-footer">
       
@@ -131,42 +538,29 @@
     <footer class="footer pt-5 mt-5">
   <div class="container">
     <div class="py-3">
-      <div class="row justify-content-between">
-        <div class="col-6">
-          <img class="filter-gray mb-3 lazyload" height="40" data-src="/images/brand.png" alt="江伟课题组" role="img">
-          <p class="mb-4"></p>
-          <ul class="list-inline">
-            
-          </ul>
-        </div>
-        <div class="col-4">
+      <div class="row py-3">
+        <div class="col-12">
           <h5>友情链接</h5>
-          <ul class="list-inline">
-            
+          <ul class="list-inline friend-links">
+            <li class="list-inline-item">
+              <a href="https://hjxy.nju.edu.cn/" target="_blank">南京大学环境学院</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://ensklpcrr.nju.edu.cn/" target="_blank">南京大学水污染控制与资源绿色循环全国重点实验室</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://hjxy.nju.edu.cn/ptyjd/gjgcjsyjzx/index.html" target="_blank">国家有机毒物污染控制与资源化工程技术研究中心</a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
     <hr class="hr" style="opacity: .25;">
     <div class="pt-3 pb-5">
-      <div class="text-center mb-3">
-        <p class="mb-0">&copy; 2025 版权所有江伟课题组</p>
+        <div class="text-center mb-3">
+          <p class="mb-0">&copy; 2025 版权所有江伟课题组</p>
+        </div>
       </div>
-      <div class="text-center">
-        <h6 class="mb-2">友情链接</h6>
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item">
-            <a href="https://hjxy.nju.edu.cn/" target="_blank">南京大学环境学院</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://ensklpcrr.nju.edu.cn/" target="_blank">南京大学水污染控制与资源绿色循环全国重点实验室</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://hjxy.nju.edu.cn/ptyjd/gjgcjsyjzx/index.html" target="_blank">国家有机毒物污染控制与资源化工程技术研究中心</a>
-          </li>
-        </ul>
-      </div>
-    </div>
   </div>
 </footer>
   </main>
@@ -177,37 +571,27 @@
   
     
   <li class="nav-item ">
-    <a class="nav-item-link" href="/shouye">首页</a>
-  </li>
-  
-    
-  <li class="nav-item ">
-    <a class="nav-item-link" href="/research">研究方向</a>
-  </li>
-  
-    
-  <li class="nav-item ">
-    <a class="nav-item-link" href="/projects">科研项目</a>
-  </li>
-  
-    
-  <li class="nav-item ">
-    <a class="nav-item-link" href="/papers">学术成果</a>
+    <a class="nav-item-link" href="/research">RESEARCH</a>
   </li>
   
     
   <li class="nav-item active">
-    <a class="nav-item-link" href="/members">团队成员</a>
+    <a class="nav-item-link" href="/members">PEOPLE</a>
   </li>
   
     
   <li class="nav-item ">
-    <a class="nav-item-link" href="/admission">招生信息</a>
+    <a class="nav-item-link" href="/papers">PUBLICTION</a>
   </li>
   
     
   <li class="nav-item ">
-    <a class="nav-item-link" href="/contact">联系我们</a>
+    <a class="nav-item-link" href="/gallery">GALLERY</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/contact">CONTACT</a>
   </li>
   
 </ul>
